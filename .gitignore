@@ -25,3 +25,10 @@ Thumbs.db
 
 # fabric
 run/
+
+# tooling metadata
+.reasonix/
+
+# local archives
+*.zip
+
