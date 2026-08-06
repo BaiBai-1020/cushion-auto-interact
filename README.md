@@ -28,9 +28,9 @@
 ```json
 {
   "enabledByDefault": true,
-  "clickIntervalMs": 200,
+  "clickIntervalMs": 100,
   "targetEntities": [
-    "cushion:*"
+    "minecraft:cushion"
   ]
 }
 ```
@@ -38,15 +38,16 @@
 | 字段 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | `enabledByDefault` | `boolean` | `true` | 进入游戏时功能是否默认开启 |
-| `clickIntervalMs` | `long` | `200` | 自动点击使用键的最小间隔（毫秒），越小点击越频繁 |
-| `targetEntities` | `string[]` | `["cushion:*"]` | 要自动点击的实体 ID 列表（见下方匹配规则） |
+| `clickIntervalMs` | `long` | `100` | 自动点击使用键的最小间隔（毫秒），越小点击越频繁 |
+| `targetEntities` | `string[]` | `["minecraft:cushion"]` | 要自动点击的实体 ID 列表（见下方匹配规则） |
 
 ### 实体匹配规则
 
-- `cushion:*` —— 匹配 `cushion` 命名空间下的**所有**实体（默认值）。
+- `minecraft:cushion` —— 精确匹配 `minecraft` 命名空间下 ID 为 `cushion` 的实体（默认值）。
+- `cushion:*` —— 匹配 `cushion` 命名空间下的**所有**实体。
 - `minecraft:villager` —— 精确匹配指定 ID 的实体。
 - `*` —— 匹配**所有**实体。
-- 列表为空（`[]`）时，等价于默认规则：匹配所有 `cushion:` 实体。
+- 列表为空（`[]`）时，回退为匹配所有 `cushion:` 命名空间的实体。
 
 ## 构建
 

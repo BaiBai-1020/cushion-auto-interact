@@ -32,9 +32,9 @@ public final class CushionConfig {
 	/** 进入游戏时功能是否默认开启。 */
 	public boolean enabledByDefault = true;
 	/** 自动点击使用键的最小间隔（毫秒）。 */
-	public long clickIntervalMs = 200;
+	public long clickIntervalMs = 100;
 	/** 目标实体 ID 列表。 */
-	public List<String> targetEntities = new ArrayList<>(List.of("cushion:*"));
+	public List<String> targetEntities = new ArrayList<>(List.of("minecraft:cushion"));
 
 	/**
 	 * 判断指定实体类型 ID 是否命中配置的目标列表。
