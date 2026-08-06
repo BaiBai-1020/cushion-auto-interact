@@ -4,7 +4,7 @@
 
 ## 支持版本
 
-- Minecraft：**26.3-snapshot-3 ~ 26.3-snapshot-7**（在 `fabric.mod.json` 中声明为 `>=26.3-snapshot-3 <26.4`，26.3 正式版发布后同样可用）
+- Minecraft：**26.3 开发周期全部版本**（alpha / snapshot / 未来正式版，在 `fabric.mod.json` 中声明为 `>=26.3-alpha.1 <26.4`）
 - Fabric Loader：`>=0.19.3`
 - Fabric API：`*`
 - Java：`>=25`
