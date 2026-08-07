@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
 	"id": "cushion",
-	"version": "${version}",
+	"version": "1.0.0",
 	"name": "Cushion Auto-Interact",
-	"description": "当准心对准 cushion 命名空间的实体时，按配置的间隔自动执行使用键（默认右键）交互。支持按键切换开关、JSON 配置。",
+	"description": "当准心对准坐垫时，自动执行使用键（默认右键）交互。支持按键切换开关、JSON 配置。",
 	"authors": [
-		"cushion"
+		"BaiBai_1020"
 	],
 	"license": "MIT",
 	"environment": "client",
